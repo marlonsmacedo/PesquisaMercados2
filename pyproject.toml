@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pesquisamercados2"
+version = "0.1.0"
+description = "Aplicação agregadora de preços para o seguimento aAlimentício"
+authors = ["Marlon Macedo"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.109.2"
+uvicorn = {extras = ["standard"], version = "^0.27.0.post1"}
+httpx = "^0.26.0"
+bs4 = "^0.0.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.21.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
